@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DP Lab – Môi Trường Vi Sinh Chất Lượng Cao | ISO · USP · EP</title>
-  <meta name="description" content="DP Lab — nhà phân phối chính thức môi trường nuôi cấy vi sinh CulturaLab tại Việt Nam. Đáp ứng tiêu chuẩn ISO, USP, EP cho phòng QC dược phẩm, thực phẩm, nước và mỹ phẩm." />
-  <meta name="keywords" content="môi trường vi sinh, culture media, DP Lab, CulturaLab, ISO 17025, USP, EP, dehydrated culture media, ready-to-use media, settle plate, contact plate, kiểm nghiệm vi sinh, QC dược phẩm" />
+  <title>DP Lab – Môi Trường Vi Sinh · Thiết Bị · Vật Tư Phòng Lab</title>
+  <meta name="description" content="DP Lab (Development – Passion) — nhà phân phối môi trường nuôi cấy vi sinh, thiết bị và vật tư tiêu hao cho phòng kiểm nghiệm tại Việt Nam. Chất lượng cao – Chi phí hợp lý. Đáp ứng ISO · USP · EP." />
+  <meta name="keywords" content="môi trường vi sinh, thiết bị vi sinh, vật tư tiêu hao lab, DP Lab, Biomedia, Tailin, ATCC, Masterflex, Entegris, kiểm nghiệm thực phẩm, kiểm nghiệm nước, dược phẩm" />
   <meta name="author" content="DP Lab" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="DP Lab – Môi Trường Vi Sinh Chất Lượng Cao" />
-  <meta property="og:description" content="Môi trường nuôi cấy vi sinh đạt chuẩn ISO · USP · EP cho phòng thí nghiệm thực phẩm, nước và dược phẩm tại Việt Nam." />
+  <meta property="og:title" content="DP Lab – Môi Trường Vi Sinh · Thiết Bị · Vật Tư" />
+  <meta property="og:description" content="Chất lượng cao – Chi phí hợp lý. Môi trường nuôi cấy vi sinh, thiết bị và vật tư tiêu hao cho phòng kiểm nghiệm tại Việt Nam." />
   <meta property="og:image" content="assets/dp-lab-logo.png" />
   <meta property="og:locale" content="vi_VN" />
 
@@ -22,7 +21,7 @@
 
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;scroll-padding-top:80px}
+    html{scroll-behavior:smooth;scroll-padding-top:84px}
     body{font-family:var(--font-body);color:var(--text);background:var(--white);line-height:1.65;overflow-x:hidden}
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
@@ -35,7 +34,6 @@
       --red:#b32a28;
       --red-mid:#c84a48;
       --red-light:#e07a78;
-      --red-glow:#e8a5a3;
       --red-soft:#f7e8e7;
       --red-tint:#fdf6f5;
       --cream:#fbf7f4;
@@ -52,24 +50,23 @@
       --r:14px;
       --font-heading:'Playfair Display',Georgia,serif;
       --font-body:'DM Sans','Helvetica Neue',sans-serif;
-      --hero-bg:#fbf7f4;
-      --hero-text:#2a1416;
     }
 
     /* Layout */
     .container{max-width:1180px;margin:0 auto;padding:0 28px}
-    .section{padding:88px 0}
-    .section-header{text-align:center;margin-bottom:52px}
+    .section{padding:84px 0}
+    .section-header{text-align:center;margin-bottom:48px}
 
-    /* Labels & Headings */
     .section-label{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);background:var(--red-soft);padding:5px 14px;border-radius:100px;margin-bottom:14px}
     .section-heading{font-family:var(--font-heading);font-size:clamp(1.9rem,3vw,2.6rem);font-weight:700;color:var(--text);line-height:1.2;margin-bottom:14px}
-    .section-desc{font-size:1.05rem;color:var(--muted);max-width:580px;margin:0 auto;line-height:1.7}
+    .section-desc{font-size:1.05rem;color:var(--muted);max-width:600px;margin:0 auto;line-height:1.7}
 
-    /* Animations */
     @keyframes certFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-    .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
-    .reveal.visible{opacity:1;transform:none}
+    .reveal{opacity:1;transform:none}
+    @media (prefers-reduced-motion: no-preference){
+      .js-anim .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+      .js-anim .reveal.visible{opacity:1;transform:none}
+    }
 
     /* Buttons */
     .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:9px;font-family:var(--font-body);font-size:.95rem;font-weight:600;cursor:pointer;transition:all .2s;border:none;white-space:nowrap;text-decoration:none}
@@ -88,9 +85,12 @@
     /* NavBar */
     .navbar{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--border-soft);transition:box-shadow .3s}
     .navbar--scrolled{box-shadow:0 4px 20px rgba(58,10,12,0.06)}
-    .navbar__inner{display:flex;align-items:center;gap:20px;height:76px}
-    .navbar__logo-link{flex-shrink:0;display:flex;align-items:center}
-    .navbar__logo{height:58px;width:auto;object-fit:contain}
+    .navbar__inner{display:flex;align-items:center;gap:20px;height:84px}
+    .navbar__logo-link{flex-shrink:0;display:flex;align-items:center;gap:13px}
+    .navbar__logo{height:68px;width:68px;border-radius:50%;object-fit:cover;box-shadow:0 2px 10px rgba(179,42,40,0.18)}
+    .navbar__wordmark{display:flex;flex-direction:column;line-height:1.05}
+    .navbar__wordmark b{font-family:var(--font-heading);font-size:1.35rem;font-weight:700;color:var(--red);letter-spacing:.01em}
+    .navbar__wordmark span{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
     .navbar__links{display:flex;align-items:center;gap:2px;margin-left:auto}
     .navbar__link{color:var(--text);font-size:.9rem;font-weight:600;padding:8px 14px;border-radius:7px;transition:all .2s;white-space:nowrap;cursor:pointer}
     .navbar__link:hover{color:var(--red);background:var(--red-soft)}
@@ -98,132 +98,126 @@
     .navbar__burger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:.3s}
 
     /* Hero */
-    .hero{position:relative;min-height:90vh;background:var(--hero-bg);overflow:hidden;display:flex;align-items:center;
+    .hero{position:relative;min-height:88vh;background:var(--cream);overflow:hidden;display:flex;align-items:center;
       background-image:radial-gradient(circle at 88% 22%,rgba(179,42,40,0.10),transparent 45%),radial-gradient(circle at 12% 88%,rgba(179,42,40,0.06),transparent 50%)}
-    .hero__inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:100px 28px 80px;position:relative;z-index:1;max-width:1180px;margin:0 auto;width:100%}
+    .hero__inner{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;padding:90px 28px 70px;position:relative;z-index:1;max-width:1180px;margin:0 auto;width:100%}
     .hero__label{font-size:.76rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:18px;display:inline-flex;align-items:center;gap:10px}
     .hero__label::before{content:'';width:32px;height:2px;background:var(--red);display:inline-block}
-    .hero__heading{font-family:var(--font-heading);font-size:clamp(2.8rem,5vw,4.4rem);font-weight:700;color:var(--hero-text);line-height:1.1;margin-bottom:22px}
-    .hero__heading em{color:var(--red);font-style:italic;display:block}
-    .hero__sub{font-size:1.08rem;color:var(--text-mid);line-height:1.78;margin-bottom:36px;max-width:480px}
+    .hero__heading{font-family:var(--font-heading);font-size:clamp(2.4rem,4.3vw,3.8rem);font-weight:700;color:var(--text);line-height:1.08;margin-bottom:14px}
+    .hero__heading b{font-weight:700;white-space:nowrap}
+    .hero__heading em{display:block;font-style:normal;font-family:var(--font-body);font-size:clamp(1.1rem,1.9vw,1.5rem);font-weight:600;color:var(--red);letter-spacing:.01em;margin-top:14px}
+    .hero__sub{font-size:1.06rem;color:var(--text-mid);line-height:1.78;margin-bottom:34px;max-width:500px}
     .hero__actions{display:flex;gap:14px;flex-wrap:wrap}
     .hero__visual{display:flex;justify-content:center;align-items:center}
 
-    /* Flask */
-    .flask-wrap{position:relative;width:280px;height:360px;display:flex;align-items:center;justify-content:center}
-    .flask-svg{width:220px;height:300px;filter:drop-shadow(0 20px 48px rgba(179,42,40,0.20))}
-    .flask-badge{position:absolute;background:#fff;border:1px solid var(--border);border-radius:10px;padding:8px 18px;font-size:.8rem;font-weight:800;letter-spacing:.07em;color:var(--red);box-shadow:var(--sh-sm)}
-    .flask-badge--iso{top:18%;right:0;animation:certFloat 3.2s ease-in-out infinite}
-    .flask-badge--usp{top:52%;right:-10%;animation:certFloat 3.2s ease-in-out infinite;animation-delay:1s}
-    .flask-badge--ep{bottom:20%;left:5%;animation:certFloat 3.2s ease-in-out infinite;animation-delay:2s}
+    /* Petri dish hero */
+    .petri-wrap{position:relative;width:360px;height:360px;display:flex;align-items:center;justify-content:center}
+    .petri-hero{width:330px;height:330px;filter:drop-shadow(0 24px 50px rgba(179,42,40,0.22))}
+    .petri-badge{position:absolute;background:#fff;border:1px solid var(--border);border-radius:12px;padding:9px 19px;font-size:.82rem;font-weight:800;letter-spacing:.07em;color:var(--red);box-shadow:var(--sh-md)}
+    .petri-badge--iso{top:6%;right:-2%;animation:certFloat 3.2s ease-in-out infinite}
+    .petri-badge--usp{top:46%;right:-9%;animation:certFloat 3.2s ease-in-out infinite;animation-delay:1s}
+    .petri-badge--ep{bottom:8%;left:2%;animation:certFloat 3.2s ease-in-out infinite;animation-delay:2s}
 
-    /* Stats Bar */
-    .stats-bar{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-    .stats-bar__inner{display:grid;grid-template-columns:repeat(4,1fr)}
-    .stat-item{padding:36px 24px;text-align:center;border-right:1px solid var(--border-soft);transition:.2s}
-    .stat-item:hover{background:var(--red-tint)}
-    .stat-item:last-child{border-right:none}
-    .stat-value{display:block;font-family:var(--font-heading);font-size:2.1rem;font-weight:700;color:var(--red);margin-bottom:4px}
-    .stat-label{font-size:.78rem;color:var(--muted);letter-spacing:.05em}
+    /* Values (Development / Passion) */
+    .values-section{background:var(--white)}
+    .values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:8px}
+    .value-card{background:var(--cream);border:1px solid var(--border);border-radius:var(--r);padding:40px 38px;position:relative;overflow:hidden;transition:.25s}
+    .value-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--red-soft)}
+    .value-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:4px;background:var(--red)}
+    .value-card__icon{width:60px;height:60px;border-radius:15px;background:var(--red-soft);color:var(--red);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+    .value-card__icon svg{width:32px;height:32px}
+    .value-card__en{font-family:var(--font-heading);font-size:1.7rem;font-weight:700;color:var(--text);margin-bottom:2px}
+    .value-card__vi{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+    .value-card__desc{font-size:.96rem;color:var(--muted);line-height:1.75}
 
-    /* About */
-    .about-section{background:var(--white)}
-    .about__grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-    .about__text .section-heading{text-align:left;margin-bottom:18px}
-    .about__lead{font-size:1.08rem;color:var(--text);line-height:1.72;margin-bottom:16px;font-weight:500}
-    .about__body{font-size:.96rem;color:var(--muted);line-height:1.78;margin-bottom:13px}
-    .about__certs{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
-    .cert-pill{padding:8px 20px;border-radius:100px;border:2px solid var(--border);font-size:.8rem;font-weight:700;letter-spacing:.08em;color:var(--red-dark);transition:.2s;cursor:default;background:#fff}
-    .cert-pill:hover{border-color:var(--red);background:var(--red-soft)}
-    .about__card{background:#fff;border-radius:var(--r);padding:36px;border:1px solid var(--border);box-shadow:var(--sh-sm);position:relative;overflow:hidden}
-    .about__card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--red),var(--red-mid))}
-    .petri-svg{width:140px;height:140px;margin:0 auto 24px}
-    .about__stat-row{display:flex;align-items:center;gap:24px;justify-content:center}
-    .about__stat-block{text-align:center}
-    .about__stat-num{font-family:var(--font-heading);font-size:2.5rem;font-weight:700;color:var(--red)}
-    .about__stat-num span{font-size:1.5rem}
-    .about__stat-name{font-size:.78rem;color:var(--muted);font-weight:600;letter-spacing:.04em;margin-top:3px}
-    .about__stat-div{width:1px;height:48px;background:var(--border)}
-
-    /* Products */
+    /* Product categories */
     .products-section{background:var(--cream)}
-    .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-    .product-card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-sm);border:1px solid var(--border);display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s,border-color .25s}
-    .product-card:hover{box-shadow:var(--sh-lg);transform:translateY(-6px);border-color:var(--red-soft)}
-    .product-card__media{aspect-ratio:4/3;background:linear-gradient(160deg,#f4f1ef 0%,#ecdedd 100%);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
-    .product-card__media img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-    .product-card:hover .product-card__media img{transform:scale(1.04)}
-    .product-card__badge{position:absolute;top:14px;left:14px;background:var(--red);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:100px;z-index:2}
-    .product-card__body{padding:26px 26px 28px;display:flex;flex-direction:column;gap:11px;flex:1}
-    .product-card__sub{font-size:.72rem;font-weight:700;letter-spacing:.09em;color:var(--muted);text-transform:uppercase}
-    .product-card__title{font-family:var(--font-heading);font-size:1.32rem;font-weight:700;color:var(--text);line-height:1.25}
-    .product-card__desc{font-size:.9rem;color:var(--muted);line-height:1.7;flex:1}
-    .product-card__features{list-style:none;display:flex;flex-direction:column;gap:7px;margin:3px 0 10px}
-    .product-card__features li{font-size:.86rem;color:var(--text);display:flex;gap:9px;align-items:flex-start}
-    .feat-check{font-weight:700;flex-shrink:0;margin-top:1px;color:var(--red)}
-
-    /* Featured Products */
-    .showcase-section{background:var(--white)}
-    .showcase-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-    .showcase-card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-sm);border:1px solid var(--border);display:flex;flex-direction:column;transition:.25s}
-    .showcase-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px)}
-    .showcase-card--wide{grid-column:span 2}
-    .showcase-card__media{aspect-ratio:16/9;background:#f4f1ef;overflow:hidden;position:relative}
-    .showcase-card--wide .showcase-card__media{aspect-ratio:21/9}
-    .showcase-card__media img{width:100%;height:100%;object-fit:cover}
-    .showcase-card__body{padding:24px 28px 28px;display:flex;flex-direction:column;gap:8px}
-    .showcase-card__tag{font-size:.7rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--red);margin-bottom:2px}
-    .showcase-card__title{font-family:var(--font-heading);font-size:1.25rem;font-weight:700;color:var(--text);line-height:1.3}
-    .showcase-card__desc{font-size:.9rem;color:var(--muted);line-height:1.7}
-
-    /* Advantages */
-    .adv-section{background:var(--cream)}
-    .adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-    .adv-card{background:#fff;border-radius:var(--r);padding:30px;border:1px solid var(--border);transition:.25s;position:relative}
-    .adv-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--red-soft)}
-    .adv-num{font-family:var(--font-heading);font-size:2.8rem;font-weight:700;color:var(--red);opacity:.22;line-height:1;margin-bottom:12px}
-    .adv-title{font-size:.98rem;font-weight:700;color:var(--text);margin-bottom:9px;line-height:1.35}
-    .adv-desc{font-size:.86rem;color:var(--muted);line-height:1.72}
+    .cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+    .cat-card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-sm);border:1px solid var(--border);display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s,border-color .25s}
+    .cat-card:hover{box-shadow:var(--sh-lg);transform:translateY(-6px);border-color:var(--red-soft)}
+    .cat-card__head{position:relative;padding:34px 28px 28px;background:linear-gradient(150deg,var(--red) 0%,var(--red-dark) 100%);color:#fff;overflow:hidden}
+    .cat-card__head::after{content:'';position:absolute;right:-40px;bottom:-50px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,0.08)}
+    .cat-card__icon{width:58px;height:58px;border-radius:14px;background:rgba(255,255,255,0.16);display:flex;align-items:center;justify-content:center;margin-bottom:16px;position:relative;z-index:1}
+    .cat-card__icon svg{width:32px;height:32px;color:#fff}
+    .cat-card__kicker{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;opacity:.8;margin-bottom:5px;position:relative;z-index:1}
+    .cat-card__title{font-family:var(--font-heading);font-size:1.4rem;font-weight:700;line-height:1.22;position:relative;z-index:1}
+    .cat-card__body{padding:24px 28px 28px;display:flex;flex-direction:column;flex:1}
+    .cat-card__list{list-style:none;display:flex;flex-direction:column;gap:11px;flex:1;margin-bottom:22px}
+    .cat-card__list li{font-size:.9rem;color:var(--text);display:flex;gap:11px;align-items:flex-start;line-height:1.45}
+    .cat-card__list li::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:7px}
+    .cat-card__list li b{font-weight:600}
+    .cat-card__list li span{color:var(--muted);font-size:.82rem}
 
     /* Applications */
-    .app-section{background:var(--cream);padding:88px 0;position:relative;overflow:hidden}
+    .app-section{background:var(--white);position:relative;overflow:hidden}
     .app-section::before{content:'';position:absolute;top:-100px;right:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(179,42,40,0.07),transparent 70%);pointer-events:none}
-    .app-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px;position:relative}
-    .app-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:30px 24px 28px;transition:.25s;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:14px;box-shadow:var(--sh-sm)}
+    .app-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;position:relative}
+    .app-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:32px 26px 28px;transition:.25s;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:14px;box-shadow:var(--sh-sm);cursor:pointer}
     .app-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
     .app-card:hover{box-shadow:var(--sh-md);transform:translateY(-4px);border-color:var(--red-soft)}
     .app-card:hover::before{transform:scaleX(1)}
-    .app-icon{width:56px;height:56px;border-radius:14px;background:var(--red-soft);display:flex;align-items:center;justify-content:center;color:var(--red);transition:.25s}
+    .app-icon{width:58px;height:58px;border-radius:15px;background:var(--red-soft);display:flex;align-items:center;justify-content:center;color:var(--red);transition:.25s}
     .app-card:hover .app-icon{background:var(--red);color:#fff}
-    .app-icon svg{width:30px;height:30px}
-    .app-label{font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
-    .app-title{font-family:var(--font-heading);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.3}
-    .app-desc{font-size:.86rem;color:var(--muted);line-height:1.72;flex:1}
+    .app-icon svg{width:31px;height:31px}
+    .app-label{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+    .app-title{font-family:var(--font-heading);font-size:1.12rem;font-weight:700;color:var(--text);margin-bottom:4px;line-height:1.3}
+    .app-desc{font-size:.86rem;color:var(--muted);line-height:1.7;flex:1}
+    .app-card__more{font-size:.82rem;font-weight:700;color:var(--red);display:inline-flex;align-items:center;gap:6px}
+
+    /* Brands */
+    .brands-section{background:var(--cream)}
+    .brands-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .brand-tile{display:flex;align-items:center;justify-content:center;text-align:center;padding:30px 18px;background:#fff;border:1px solid var(--border);border-radius:var(--r);transition:.22s;min-height:108px}
+    .brand-tile:hover{border-color:var(--red);box-shadow:var(--sh-md);transform:translateY(-3px)}
+    .brand-tile__name{font-family:var(--font-heading);font-size:1.18rem;font-weight:700;color:var(--text-mid);letter-spacing:.02em;transition:.22s}
+    .brand-tile:hover .brand-tile__name{color:var(--red)}
+    .brand-tile__name small{display:block;font-family:var(--font-body);font-size:.64rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:5px}
 
     /* CTA */
-    .cta-section{background:linear-gradient(120deg,var(--red) 0%,var(--red-dark) 100%);padding:64px 0;position:relative;overflow:hidden}
+    .cta-section{background:linear-gradient(120deg,var(--red) 0%,var(--red-dark) 100%);padding:62px 0;position:relative;overflow:hidden}
     .cta-section::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 80% 30%,rgba(255,255,255,0.06),transparent 50%);pointer-events:none}
     .cta-section__inner{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;position:relative}
     .cta-heading{font-family:var(--font-heading);font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:700;color:#fff;margin-bottom:8px}
     .cta-desc{font-size:1rem;color:rgba(255,255,255,0.82);line-height:1.65}
 
     /* Footer */
-    .footer{background:var(--cream);padding:64px 0 0;position:relative;border-top:1px solid var(--border)}
+    .footer{background:var(--cream);padding:60px 0 0;position:relative;border-top:1px solid var(--border)}
     .footer::before{content:'';position:absolute;top:-1px;left:0;right:0;height:2px;background:var(--red)}
-    .footer__inner{display:grid;grid-template-columns:280px 1fr;gap:64px;padding-bottom:48px;border-bottom:1px solid var(--border)}
-    .footer__logo{height:54px;width:auto;object-fit:contain}
-    .footer__tagline{font-style:italic;color:var(--red);font-size:.9rem;font-weight:600;margin:14px 0 6px;font-family:var(--font-heading)}
-    .footer__sub{font-size:.84rem;color:var(--muted);line-height:1.6}
+    .footer__inner{display:grid;grid-template-columns:300px 1fr;gap:60px;padding-bottom:44px;border-bottom:1px solid var(--border)}
+    .footer__brand-row{display:flex;align-items:center;gap:13px;margin-bottom:14px}
+    .footer__logo{height:58px;width:58px;border-radius:50%;object-fit:cover}
+    .footer__brand-row b{font-family:var(--font-heading);font-size:1.3rem;color:var(--red);white-space:nowrap}
+    .footer__tagline{font-style:italic;color:var(--red);font-size:.9rem;font-weight:600;margin:0 0 8px;font-family:var(--font-heading)}
+    .footer__sub{font-size:.84rem;color:var(--muted);line-height:1.65}
     .footer__cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
     .footer__col{display:flex;flex-direction:column;gap:10px}
     .footer__col-title{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text);margin-bottom:5px}
     .footer__col a{font-size:.86rem;color:var(--muted);transition:.2s;cursor:pointer}
     .footer__col a:hover{color:var(--red)}
-    .footer__placeholder{font-size:.84rem;color:var(--muted);font-style:italic}
+    .footer__col span.muted{font-size:.84rem;color:var(--muted);line-height:1.5}
     .footer__bottom{padding:22px 0;font-size:.78rem;color:var(--muted);text-align:center;background:var(--cream-deep)}
 
+    /* Floating contact (bottom-left) */
+    .float-contact{position:fixed;left:22px;bottom:22px;z-index:500;display:flex;align-items:center;gap:13px;background:#fff;border:1px solid var(--border);border-radius:14px;padding:12px 18px 12px 14px;box-shadow:0 10px 36px rgba(58,10,12,0.16);max-width:260px}
+    .float-contact__icon{width:44px;height:44px;border-radius:11px;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;animation:certFloat 2.6s ease-in-out infinite}
+    .float-contact__icon svg{width:22px;height:22px}
+    .float-contact__label{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+    .float-contact__num{font-family:var(--font-heading);font-size:1.08rem;font-weight:700;color:var(--red);line-height:1.2;display:block;white-space:nowrap}
+    .float-contact__mail{display:block}
+    .float-contact__mail{font-size:.74rem;color:var(--muted)}
+
+    /* Floating social (bottom-right) */
+    .float-social{position:fixed;right:22px;bottom:22px;z-index:500;display:flex;flex-direction:column;gap:11px}
+    .float-social a{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.18);transition:transform .18s;font-weight:800;font-size:.86rem}
+    .float-social a:hover{transform:scale(1.09)}
+    .float-social a svg{width:23px;height:23px}
+    .fs-zalo{background:#0068ff}
+    .fs-fb{background:#1877f2}
+    .fs-in{background:#0a66c2}
+    .fs-tawk{background:#03a84e}
+
     /* Modal */
-    .modal-overlay{position:fixed;inset:0;background:rgba(7,20,40,0.78);backdrop-filter:blur(5px);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px}
+    .modal-overlay{position:fixed;inset:0;background:rgba(40,18,20,0.74);backdrop-filter:blur(5px);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px}
     .modal{background:#fff;border-radius:20px;padding:44px;max-width:600px;width:100%;max-height:90vh;overflow-y:auto;position:relative;box-shadow:0 28px 80px rgba(0,0,0,0.3)}
     .modal__close{position:absolute;top:20px;right:22px;background:none;border:none;font-size:1rem;cursor:pointer;color:var(--muted);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:.2s}
     .modal__close:hover{background:var(--cream);color:var(--text)}
@@ -247,49 +241,53 @@
     /* Responsive */
     @media(max-width:1024px){
       .app-grid{grid-template-columns:repeat(2,1fr)}
-      .adv-grid{grid-template-columns:repeat(2,1fr)}
+      .brands-grid{grid-template-columns:repeat(3,1fr)}
     }
     @media(max-width:768px){
-      .navbar__links{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;padding:12px 16px;gap:2px;border-bottom:1px solid var(--border);box-shadow:0 8px 24px rgba(30,58,110,0.1)}
+      .navbar__links{display:none;position:absolute;top:84px;left:0;right:0;background:#fff;flex-direction:column;padding:12px 16px;gap:2px;border-bottom:1px solid var(--border);box-shadow:0 8px 24px rgba(58,10,12,0.1)}
       .navbar__links--open{display:flex}
       .navbar__burger{display:flex}
       .navbar .btn--sm{display:none}
-      .hero__inner{grid-template-columns:1fr;padding:80px 28px 60px}
-      .hero__visual{display:none}
-      .stats-bar__inner{grid-template-columns:repeat(2,1fr)}
-      .about__grid{grid-template-columns:1fr}
-      .about__visual{display:none}
-      .products-grid{grid-template-columns:1fr}
-      .showcase-grid{grid-template-columns:1fr}
-      .showcase-card--wide{grid-column:span 1}
+      .navbar__wordmark span{display:none}
+      .hero__inner{grid-template-columns:1fr;padding:70px 28px 50px}
+      .hero__visual{order:-1}
+      .petri-wrap{width:280px;height:280px}
+      .petri-hero{width:250px;height:250px}
+      .values-grid{grid-template-columns:1fr}
+      .cats-grid{grid-template-columns:1fr}
       .app-grid{grid-template-columns:1fr 1fr}
-      .adv-grid{grid-template-columns:1fr 1fr}
+      .brands-grid{grid-template-columns:repeat(2,1fr)}
       .footer__inner{grid-template-columns:1fr}
       .footer__cols{grid-template-columns:1fr 1fr}
       .cta-section__inner{flex-direction:column;text-align:center}
       .form-row{grid-template-columns:1fr}
       .modal{padding:28px 20px}
+      .float-contact{max-width:none;left:14px;right:84px;bottom:14px}
+      .float-social{right:14px;bottom:14px;gap:9px}
+      .float-social a{width:44px;height:44px}
     }
     @media(max-width:480px){
-      .stats-bar__inner{grid-template-columns:1fr}
-      .app-grid,.adv-grid{grid-template-columns:1fr}
+      .app-grid{grid-template-columns:1fr}
+      .brands-grid{grid-template-columns:1fr 1fr}
       .footer__cols{grid-template-columns:1fr}
-      .section{padding:64px 0}
+      .section{padding:60px 0}
+      .float-contact__mail{display:none}
     }
   </style>
 </head>
 <body>
   <!-- ── NavBar ─────────────────────────────────────────────── -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar" id="navbar" data-screen-label="Header">
     <div class="container navbar__inner">
       <a href="#hero" class="navbar__logo-link">
         <img src="assets/dp-lab-logo.png" alt="DP Lab" class="navbar__logo" />
+        <span class="navbar__wordmark"><b>DP Lab</b><span>Development · Passion</span></span>
       </a>
       <div class="navbar__links" id="navbar-links">
-        <a href="#about" class="navbar__link">Về chúng tôi</a>
+        <a href="#values" class="navbar__link">Về chúng tôi</a>
         <a href="#products" class="navbar__link">Sản phẩm</a>
-        <a href="#featured" class="navbar__link">Sản phẩm tiêu biểu</a>
         <a href="#applications" class="navbar__link">Ứng dụng</a>
+        <a href="#brands" class="navbar__link">Hãng</a>
       </div>
       <button class="btn btn--red btn--sm" data-open-quote>Yêu cầu báo giá</button>
       <button class="navbar__burger" id="navbar-burger" aria-label="Menu">
@@ -299,16 +297,16 @@
   </nav>
 
   <!-- ── Hero ───────────────────────────────────────────────── -->
-  <section id="hero" class="hero">
+  <section id="hero" class="hero" data-screen-label="Hero">
     <canvas id="molecule-canvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"></canvas>
     <div class="container hero__inner">
       <div class="hero__content">
         <div class="hero__label">Development · Passion</div>
-        <h1 class="hero__heading">Môi Trường Vi Sinh<em>Chất Lượng Cao</em></h1>
+        <h1 class="hero__heading"><b>Môi Trường Vi Sinh</b><em>Chất lượng cao – Chi phí hợp lý</em></h1>
         <p class="hero__sub">
-          DP Lab cung cấp đầy đủ dòng sản phẩm môi trường nuôi cấy vi sinh —
-          đáp ứng tiêu chuẩn ISO, EP, USP cho phòng thí nghiệm thực phẩm, nước
-          và dược phẩm tại Việt Nam.
+          DP Lab cung cấp trọn bộ giải pháp cho phòng kiểm nghiệm vi sinh —
+          môi trường nuôi cấy, thiết bị và vật tư tiêu hao — đáp ứng tiêu chuẩn
+          ISO, EP, USP cho ngành thực phẩm, nước, mỹ phẩm và dược phẩm tại Việt Nam.
         </p>
         <div class="hero__actions">
           <button class="btn btn--red btn--lg" data-open-quote>Yêu cầu báo giá</button>
@@ -316,295 +314,238 @@
         </div>
       </div>
       <div class="hero__visual">
-        <div class="flask-wrap">
-          <svg viewBox="0 0 220 300" fill="none" class="flask-svg" aria-hidden="true">
-            <rect x="87" y="14" width="46" height="72" rx="5" fill="rgba(179,42,40,0.06)" stroke="rgba(179,42,40,0.5)" stroke-width="2.5"/>
-            <rect x="76" y="7" width="68" height="16" rx="8" fill="rgba(179,42,40,0.55)"/>
-            <path d="M87 86 L34 224 Q20 262 46 272 L174 272 Q200 262 186 224 L133 86 Z" fill="rgba(179,42,40,0.04)" stroke="rgba(179,42,40,0.5)" stroke-width="2.5"/>
-            <path d="M50 228 Q110 216 170 228 L183 252 Q186 270 174 273 L46 273 Q34 270 37 252 Z" fill="rgba(179,42,40,0.62)"/>
-            <circle cx="88" cy="250" r="8" fill="rgba(179,42,40,0.78)"/>
-            <circle cx="118" cy="260" r="5.5" fill="rgba(179,42,40,0.65)"/>
-            <circle cx="150" cy="247" r="7" fill="rgba(179,42,40,0.72)"/>
-            <circle cx="105" cy="240" r="4" fill="rgba(179,42,40,0.55)"/>
-            <path d="M102 110 L97 175" stroke="rgba(179,42,40,0.12)" stroke-width="7" stroke-linecap="round"/>
-            <line x1="112" y1="158" x2="134" y2="133" stroke="rgba(179,42,40,0.5)" stroke-width="1.8"/>
-            <line x1="134" y1="133" x2="158" y2="148" stroke="rgba(179,42,40,0.5)" stroke-width="1.8"/>
-            <line x1="134" y1="133" x2="128" y2="108" stroke="rgba(179,42,40,0.5)" stroke-width="1.8"/>
-            <circle cx="112" cy="158" r="5.5" fill="rgba(179,42,40,0.78)"/>
-            <circle cx="134" cy="133" r="8" fill="rgba(179,42,40,0.88)"/>
-            <circle cx="158" cy="148" r="5.5" fill="rgba(179,42,40,0.78)"/>
-            <circle cx="128" cy="108" r="5.5" fill="rgba(179,42,40,0.78)"/>
+        <div class="petri-wrap">
+          <svg viewBox="0 0 300 300" fill="none" class="petri-hero" aria-hidden="true">
+            <circle cx="150" cy="150" r="142" fill="#ffffff" stroke="rgba(179,42,40,0.16)" stroke-width="3"/>
+            <circle cx="150" cy="150" r="124" fill="rgba(179,42,40,0.045)" stroke="rgba(179,42,40,0.28)" stroke-width="2"/>
+            <circle cx="150" cy="150" r="124" fill="none" stroke="rgba(179,42,40,0.12)" stroke-width="1" stroke-dasharray="3 5"/>
+            <!-- colonies -->
+            <circle cx="108" cy="112" r="13" fill="rgba(179,42,40,0.55)"/>
+            <circle cx="186" cy="98" r="8" fill="rgba(179,42,40,0.45)"/>
+            <circle cx="206" cy="150" r="11" fill="rgba(179,42,40,0.5)"/>
+            <circle cx="150" cy="150" r="6" fill="rgba(179,42,40,0.4)"/>
+            <circle cx="120" cy="178" r="15" fill="rgba(179,42,40,0.6)"/>
+            <circle cx="178" cy="196" r="9" fill="rgba(179,42,40,0.46)"/>
+            <circle cx="96" cy="150" r="7" fill="rgba(179,42,40,0.42)"/>
+            <circle cx="152" cy="206" r="6.5" fill="rgba(179,42,40,0.38)"/>
+            <circle cx="164" cy="124" r="5" fill="rgba(179,42,40,0.5)"/>
+            <circle cx="132" cy="138" r="4" fill="rgba(179,42,40,0.55)"/>
+            <circle cx="200" cy="118" r="4.5" fill="rgba(179,42,40,0.4)"/>
+            <circle cx="110" cy="206" r="5.5" fill="rgba(179,42,40,0.44)"/>
+            <circle cx="188" cy="172" r="4" fill="rgba(179,42,40,0.5)"/>
+            <circle cx="142" cy="96" r="4.5" fill="rgba(179,42,40,0.4)"/>
+            <!-- gloss -->
+            <ellipse cx="116" cy="104" rx="46" ry="26" fill="rgba(255,255,255,0.45)"/>
           </svg>
-          <div class="flask-badge flask-badge--iso">ISO</div>
-          <div class="flask-badge flask-badge--usp">USP</div>
-          <div class="flask-badge flask-badge--ep">EP</div>
+          <div class="petri-badge petri-badge--iso">ISO</div>
+          <div class="petri-badge petri-badge--usp">USP</div>
+          <div class="petri-badge petri-badge--ep">EP</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Stats Bar ──────────────────────────────────────────── -->
-  <div class="stats-bar">
-    <div class="container stats-bar__inner">
-      <div class="stat-item"><span class="stat-value">30+</span><span class="stat-label">Sản phẩm môi trường bột</span></div>
-      <div class="stat-item"><span class="stat-value">3</span><span class="stat-label">Dòng sản phẩm chính</span></div>
-      <div class="stat-item"><span class="stat-value">ISO · USP · EP</span><span class="stat-label">Tiêu chuẩn quốc tế</span></div>
-      <div class="stat-item"><span class="stat-value">100%</span><span class="stat-label">Kiểm soát chất lượng</span></div>
-    </div>
-  </div>
-
-  <!-- ── About ──────────────────────────────────────────────── -->
-  <section id="about" class="section about-section">
+  <!-- ── Values (Về chúng tôi) ──────────────────────────────── -->
+  <section id="values" class="section values-section" data-screen-label="Về chúng tôi">
     <div class="container">
-      <div class="about__grid reveal">
-        <div class="about__text">
-          <span class="section-label">Về chúng tôi</span>
-          <h2 class="section-heading">Môi trường vi sinh<br/>cho phòng thí nghiệm hiện đại</h2>
-          <p class="about__lead">
-            DP Lab — <strong>Development &amp; Passion</strong> — chuyên cung cấp môi trường
-            nuôi cấy vi sinh và vật tư kiểm nghiệm cho phòng QC, phòng vận hành
-            và trung tâm kiểm định tại Việt Nam.
-          </p>
-          <p class="about__body">
-            Từ môi trường bột (DCM) có thể pha chế tại chỗ đến môi trường sẵn sử dụng
-            (RTU) trong chai PET, túi đứng và ống nghiệm — mỗi dòng sản phẩm đều tuân thủ
-            tiêu chuẩn ISO, EP, USP và được kiểm soát bởi phòng QC đạt ISO 17025.
-          </p>
-          <p class="about__body">
-            Chúng tôi đồng hành cùng đội ngũ kỹ thuật của khách hàng trong các quy trình
-            phân lập, làm giàu, đếm khuẩn lạc và giám sát môi trường phòng sạch —
-            hướng tới kết quả ổn định, có khả năng tái lập và tiết kiệm chi phí vận hành.
-          </p>
-          <div class="about__certs">
-            <div class="cert-pill">ISO</div>
-            <div class="cert-pill">USP</div>
-            <div class="cert-pill">EP</div>
-            <div class="cert-pill">GMP</div>
-          </div>
-        </div>
-        <div class="about__visual">
-          <div class="about__card">
-            <svg viewBox="0 0 160 160" fill="none" class="petri-svg" aria-hidden="true">
-              <circle cx="80" cy="80" r="74" fill="rgba(179,42,40,0.05)" stroke="rgba(179,42,40,0.22)" stroke-width="2"/>
-              <circle cx="80" cy="80" r="54" fill="rgba(179,42,40,0.04)" stroke="rgba(179,42,40,0.16)" stroke-width="1.5" stroke-dasharray="4 3"/>
-              <circle cx="62" cy="70" r="8" fill="rgba(179,42,40,0.55)"/>
-              <circle cx="94" cy="62" r="5.5" fill="rgba(179,42,40,0.45)"/>
-              <circle cx="80" cy="95" r="7" fill="rgba(179,42,40,0.42)"/>
-              <circle cx="104" cy="90" r="4" fill="rgba(179,42,40,0.5)"/>
-              <circle cx="56" cy="98" r="5" fill="rgba(179,42,40,0.35)"/>
-              <circle cx="87" cy="74" r="3.5" fill="rgba(45,20,22,0.45)"/>
+      <div class="section-header reveal">
+        <span class="section-label">Về chúng tôi</span>
+        <h2 class="section-heading">Hai giá trị cốt lõi của DP Lab</h2>
+        <p class="section-desc">Tên thương hiệu DP Lab được xây dựng trên hai giá trị dẫn đường trong mọi sản phẩm và dịch vụ chúng tôi mang đến phòng thí nghiệm Việt Nam.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 24l7-7 5 5 11-12"/><path d="M22 10h6v6"/>
             </svg>
-            <div class="about__stat-row">
-              <div class="about__stat-block">
-                <div class="about__stat-num">30<span>+</span></div>
-                <div class="about__stat-name">Sản phẩm</div>
-              </div>
-              <div class="about__stat-div"></div>
-              <div class="about__stat-block">
-                <div class="about__stat-num">3</div>
-                <div class="about__stat-name">Dòng SP chính</div>
-              </div>
-            </div>
           </div>
+          <div class="value-card__en">Development</div>
+          <div class="value-card__vi">Phát triển</div>
+          <p class="value-card__desc">Không ngừng mở rộng danh mục môi trường vi sinh, thiết bị và vật tư — cập nhật công nghệ và tiêu chuẩn mới nhất để đồng hành cùng sự phát triển của khách hàng.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 27S5 20 5 12.5A5.5 5.5 0 0 1 16 9a5.5 5.5 0 0 1 11 3.5C27 20 16 27 16 27z"/>
+            </svg>
+          </div>
+          <div class="value-card__en">Passion</div>
+          <div class="value-card__vi">Đam mê</div>
+          <p class="value-card__desc">Tận tâm với từng chi tiết kỹ thuật và từng yêu cầu của phòng lab — mang đến sự tư vấn chính xác, hỗ trợ tận nơi và chất lượng ổn định đáng tin cậy.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Product Lines ──────────────────────────────────────── -->
-  <section id="products" class="section products-section">
+  <!-- ── Product Categories (Các mục sản phẩm chính) ────────── -->
+  <section id="products" class="section products-section" data-screen-label="Sản phẩm">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Sản phẩm</span>
-        <h2 class="section-heading">3 Dòng Sản Phẩm Chính</h2>
-        <p class="section-desc">
-          Từ dạng bột linh hoạt cho phòng pha chế nội bộ đến môi trường sẵn sử dụng tiệt trùng —
-          DP Lab đáp ứng mọi quy trình kiểm nghiệm hiện đại.
-        </p>
+        <h2 class="section-heading">Các mục sản phẩm chính</h2>
+        <p class="section-desc">Ba nhóm giải pháp toàn diện cho phòng kiểm nghiệm vi sinh — từ hóa chất, môi trường đến thiết bị và vật tư tiêu hao.</p>
       </div>
-      <div class="products-grid">
-        <div class="product-card reveal">
-          <div class="product-card__media">
-            <div class="product-card__badge">Dehydrated</div>
-            <img src="assets/dehydrated.png" alt="Dehydrated Culture Media" loading="lazy"/>
+      <div class="cats-grid">
+
+        <div class="cat-card reveal">
+          <div class="cat-card__head">
+            <div class="cat-card__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 4v8L6 24a3 3 0 0 0 3 4h14a3 3 0 0 0 3-4l-7-12V4"/><path d="M11 4h10"/><path d="M9.5 19h13"/>
+              </svg>
+            </div>
+            <div class="cat-card__kicker">01 — Hóa chất</div>
+            <h3 class="cat-card__title">Hóa chất – Môi trường vi sinh</h3>
           </div>
-          <div class="product-card__body">
-            <div class="product-card__sub">Môi trường vi sinh dạng bột</div>
-            <h3 class="product-card__title">Dehydrated Culture Media</h3>
-            <p class="product-card__desc">Linh hoạt cho phòng thí nghiệm có khả năng pha chế nội bộ — kiểm soát mẻ và tối ưu chi phí.</p>
-            <ul class="product-card__features">
-              <li><span class="feat-check">✓</span> Đa dạng công thức theo tiêu chuẩn</li>
-              <li><span class="feat-check">✓</span> Linh hoạt khối lượng mẻ pha chế</li>
-              <li><span class="feat-check">✓</span> Tối ưu chi phí dài hạn</li>
+          <div class="cat-card__body">
+            <ul class="cat-card__list">
+              <li><b>Môi trường nuôi cấy vi sinh</b></li>
+              <li>Đĩa đổ sẵn <span>— pmm</span></li>
+              <li>Chủng vi sinh <span>— ATCC</span></li>
+              <li>Chỉ thị sinh học – hóa học <span>— Tailin</span></li>
+              <li>MT lên men sản xuất <span>— STBIO Media</span></li>
+              <li>Kit Endotoxin <span>— Bokang</span></li>
             </ul>
-            <button class="btn btn--outline-dark btn--sm" data-open-quote>Yêu cầu báo giá →</button>
+            <a href="#" class="btn btn--outline-dark btn--sm" data-page-pending>Xem chi tiết →</a>
           </div>
         </div>
-        <div class="product-card reveal">
-          <div class="product-card__media">
-            <div class="product-card__badge">Ready-to-Use</div>
-            <img src="assets/ready-to-use.png" alt="Ready-to-Use Bottle Media" loading="lazy"/>
+
+        <div class="cat-card reveal">
+          <div class="cat-card__head">
+            <div class="cat-card__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="6" width="24" height="16" rx="2"/><path d="M12 26h8"/><path d="M16 22v4"/><path d="M9 12h6"/><path d="M9 16h10"/>
+              </svg>
+            </div>
+            <div class="cat-card__kicker">02 — Thiết bị</div>
+            <h3 class="cat-card__title">Thiết bị phòng vi sinh</h3>
           </div>
-          <div class="product-card__body">
-            <div class="product-card__sub">Môi trường sẵn sử dụng</div>
-            <h3 class="product-card__title">Ready-to-Use Bottle Media</h3>
-            <p class="product-card__desc">Sản xuất tự động khép kín trong chai PET có nắp xoắn — giảm thiểu thao tác và rủi ro nhiễm.</p>
-            <ul class="product-card__features">
-              <li><span class="feat-check">✓</span> Quy trình aseptic khép kín</li>
-              <li><span class="feat-check">✓</span> Tiệt trùng &amp; ổn định cao</li>
-              <li><span class="feat-check">✓</span> Dung tích 90mL – 1000mL</li>
+          <div class="cat-card__body">
+            <ul class="cat-card__list">
+              <li>Máy phát hiện nhanh vi sinh <span>— Certa Blue (FnB)</span></li>
+              <li>Máy phát hiện vi sinh gây bệnh <span>— Nemis</span></li>
+              <li>Máy đếm khuẩn lạc <span>— Tailin</span></li>
+              <li>Máy định danh <span>— Zybio</span></li>
+              <li>Khử khuẩn VHP <span>— Solidfog</span></li>
+              <li>Bơm nhu động <span>— Masterflex</span></li>
             </ul>
-            <button class="btn btn--outline-dark btn--sm" data-open-quote>Yêu cầu báo giá →</button>
+            <a href="#" class="btn btn--outline-dark btn--sm" data-page-pending>Xem chi tiết →</a>
           </div>
         </div>
-        <div class="product-card reveal">
-          <div class="product-card__media">
-            <div class="product-card__badge">Bagged Media</div>
-            <img src="assets/bagged.png" alt="Stand-Up Resealable Bag" loading="lazy"/>
+
+        <div class="cat-card reveal">
+          <div class="cat-card__head">
+            <div class="cat-card__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 10l12-6 12 6-12 6z"/><path d="M4 10v12l12 6 12-6V10"/><path d="M16 16v12"/>
+              </svg>
+            </div>
+            <div class="cat-card__kicker">03 — Vật tư</div>
+            <h3 class="cat-card__title">Vật tư tiêu hao</h3>
           </div>
-          <div class="product-card__body">
-            <div class="product-card__sub">Đóng gói dạng túi đứng</div>
-            <h3 class="product-card__title">Stand-Up Resealable Bag</h3>
-            <p class="product-card__desc">Túi đứng có khóa zip tái sử dụng, sẵn sàng cho máy đồng nhất mẫu — tiện cho kiểm nghiệm thực phẩm.</p>
-            <ul class="product-card__features">
-              <li><span class="feat-check">✓</span> Khóa zip kín đóng – mở nhiều lần</li>
-              <li><span class="feat-check">✓</span> Đứng vững, dễ thao tác</li>
-              <li><span class="feat-check">✓</span> Tương thích máy homogenizer</li>
+          <div class="cat-card__body">
+            <ul class="cat-card__list">
+              <li>LBM Swab <span>— Biomedia</span></li>
+              <li>Túi dập mẫu <span>— LabPlas</span></li>
+              <li>Labware <span>— Biomedia</span></li>
+              <li>Màng lọc – Lọc 3 kênh <span>— Tailin</span></li>
+              <li>Cột lọc &amp; túi single-use <span>— Entegris</span></li>
+              <li>Ống silicone <span>— Masterflex</span></li>
             </ul>
-            <button class="btn btn--outline-dark btn--sm" data-open-quote>Yêu cầu báo giá →</button>
+            <a href="#" class="btn btn--outline-dark btn--sm" data-page-pending>Xem chi tiết →</a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ── Featured Products ──────────────────────────────────── -->
-  <section id="featured" class="section showcase-section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Sản phẩm tiêu biểu</span>
-        <h2 class="section-heading">Hình ảnh sản phẩm thực tế</h2>
-        <p class="section-desc">
-          Một số định dạng sản phẩm tiêu biểu DP Lab cung cấp — phục vụ phòng thí nghiệm
-          thực phẩm, nước, mỹ phẩm và dược phẩm.
-        </p>
-      </div>
-      <div class="showcase-grid">
-        <div class="showcase-card showcase-card--wide reveal">
-          <div class="showcase-card__media">
-            <img src="assets/rtu-overview.png" alt="Tổng quan RTU" loading="lazy"/>
-          </div>
-          <div class="showcase-card__body">
-            <div class="showcase-card__tag">Bộ sưu tập</div>
-            <h3 class="showcase-card__title">Tổng quan dòng sản phẩm RTU</h3>
-            <p class="showcase-card__desc">Đầy đủ định dạng sẵn sử dụng phục vụ lấy mẫu, làm giàu, đồng nhất hóa và phân phối trong các quy trình vi sinh.</p>
-          </div>
-        </div>
-        <div class="showcase-card reveal">
-          <div class="showcase-card__media">
-            <img src="assets/multi-format.png" alt="Chai PET, túi, ống nghiệm" loading="lazy"/>
-          </div>
-          <div class="showcase-card__body">
-            <div class="showcase-card__tag">Đa định dạng</div>
-            <h3 class="showcase-card__title">Chai PET, túi &amp; ống nghiệm</h3>
-            <p class="showcase-card__desc">Phối hợp linh hoạt các định dạng đóng gói: chai PET kín nắp xoắn, túi đứng, ống nghiệm tiệt trùng — đáp ứng đa quy trình lấy mẫu.</p>
-          </div>
-        </div>
-        <div class="showcase-card reveal">
-          <div class="showcase-card__media">
-            <img src="assets/rtu-catalog.png" alt="Danh mục RTU" loading="lazy"/>
-          </div>
-          <div class="showcase-card__body">
-            <div class="showcase-card__tag">Ready-To-Use Media</div>
-            <h3 class="showcase-card__title">Danh mục môi trường sẵn dùng</h3>
-            <p class="showcase-card__desc">Buffered Peptone Water, BPB Dilution Water, Half Fraser Broth, PBS, Fluid A — sẵn sàng trong nhiều dung tích &amp; quy cách đóng gói.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Advantages ─────────────────────────────────────────── -->
-  <section id="advantages" class="section adv-section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Lợi thế</span>
-        <h2 class="section-heading">Tại sao phòng thí nghiệm chọn DP Lab?</h2>
-      </div>
-      <div class="adv-grid">
-        <div class="adv-card reveal"><div class="adv-num">01</div><h3 class="adv-title">Tiêu chuẩn ISO / USP / EP</h3><p class="adv-desc">Sản phẩm tuân thủ đầy đủ các tiêu chuẩn quốc tế khắt khe nhất trong ngành kiểm nghiệm vi sinh.</p></div>
-        <div class="adv-card reveal"><div class="adv-num">02</div><h3 class="adv-title">Cơ sở sản xuất được chứng nhận</h3><p class="adv-desc">Sản xuất tại cơ sở đạt chuẩn với quy trình kiểm soát chất lượng nghiêm ngặt từng lô hàng.</p></div>
-        <div class="adv-card reveal"><div class="adv-num">03</div><h3 class="adv-title">Hạn sử dụng lâu</h3><p class="adv-desc">Công thức ổn định, đóng gói khoa học giúp kéo dài thời gian bảo quản, tiện lợi cho phòng lab.</p></div>
-        <div class="adv-card reveal"><div class="adv-num">04</div><h3 class="adv-title">Linh hoạt &amp; Tùy chỉnh</h3><p class="adv-desc">Đa dạng quy cách đóng gói, có thể tùy chỉnh theo yêu cầu cụ thể của từng phòng thí nghiệm.</p></div>
-        <div class="adv-card reveal"><div class="adv-num">05</div><h3 class="adv-title">Phòng QC đạt ISO 17025</h3><p class="adv-desc">Mỗi lô sản phẩm được kiểm định bởi phòng QC có chứng nhận ISO 17025 đảm bảo độ chính xác.</p></div>
-        <div class="adv-card reveal"><div class="adv-num">06</div><h3 class="adv-title">Đa dạng ứng dụng</h3><p class="adv-desc">Phục vụ nhiều lĩnh vực: y tế lâm sàng, kiểm định thực phẩm, dược phẩm, kiểm định nước và môi trường.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Applications ───────────────────────────────────────── -->
-  <section id="applications" class="section app-section">
+  <!-- ── Applications (Các mục ứng dụng) ────────────────────── -->
+  <section id="applications" class="section app-section" data-screen-label="Ứng dụng">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Ứng dụng</span>
-        <h2 class="section-heading">Phục vụ mọi lĩnh vực kiểm nghiệm vi sinh</h2>
-        <p class="section-desc">
-          Môi trường nuôi cấy DP Lab đáp ứng quy trình kiểm nghiệm theo tiêu chuẩn ISO,
-          EP, USP và TCVN cho phòng thí nghiệm tại Việt Nam.
-        </p>
+        <h2 class="section-heading">Giải pháp theo lĩnh vực</h2>
+        <p class="section-desc">Bốn nhóm ứng dụng trọng tâm DP Lab phục vụ — từ kiểm nghiệm đến sản xuất, đáp ứng tiêu chuẩn ISO, EP, USP và TCVN.</p>
       </div>
       <div class="app-grid">
-        <div class="app-card reveal">
+
+        <div class="app-card reveal" data-page-pending>
           <div class="app-icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M9 4v9a5 5 0 0 0 10 0V4"/><path d="M7 4h4M17 4h4"/>
-              <path d="M19 18v3a4 4 0 0 0 8 0v-2"/><circle cx="27" cy="17" r="2"/>
-            </svg>
-          </div>
-          <div class="app-label">Y tế</div>
-          <h3 class="app-title">Y tế &amp; Lâm sàng</h3>
-          <p class="app-desc">Phân lập, định danh mầm bệnh và kiểm tra nhạy cảm kháng sinh tại bệnh viện và phòng xét nghiệm lâm sàng.</p>
-        </div>
-        <div class="app-card reveal">
-          <div class="app-icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M6 6v9a4 4 0 0 0 8 0V6"/><path d="M10 6v9"/>
-              <path d="M22 6c-2 1-3 3-3 6 0 2 1 3 3 3v11"/>
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 6v9a4 4 0 0 0 8 0V6"/><path d="M10 6v9"/><path d="M22 6c-2 1-3 3-3 6 0 2 1 3 3 3v11"/>
             </svg>
           </div>
           <div class="app-label">Thực phẩm</div>
           <h3 class="app-title">Kiểm nghiệm thực phẩm</h3>
-          <p class="app-desc">Định lượng E. coli, Salmonella, Staphylococcus aureus và Listeria monocytogenes trong chuỗi an toàn thực phẩm.</p>
+          <p class="app-desc">Định lượng E. coli, Salmonella, Staphylococcus aureus, Listeria trong chuỗi an toàn thực phẩm.</p>
+          <span class="app-card__more">Tìm hiểu →</span>
         </div>
-        <div class="app-card reveal">
+
+        <div class="app-card reveal" data-page-pending>
           <div class="app-icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M16 4 C 11 12, 7 16, 7 21 a 9 9 0 0 0 18 0 c 0-5-4-9-9-17z"/>
-              <path d="M13 21 a 3 3 0 0 0 3 3"/>
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4 C 11 12, 7 16, 7 21 a 9 9 0 0 0 18 0 c 0-5-4-9-9-17z"/><path d="M13 21 a 3 3 0 0 0 3 3"/>
             </svg>
           </div>
           <div class="app-label">Nước</div>
           <h3 class="app-title">Kiểm nghiệm nước</h3>
           <p class="app-desc">Phát hiện coliform, E. coli và vi sinh chỉ thị trong nước uống, nước thải và nước nguồn theo TCVN.</p>
+          <span class="app-card__more">Tìm hiểu →</span>
         </div>
-        <div class="app-card reveal">
+
+        <div class="app-card reveal" data-page-pending>
           <div class="app-icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="11" y="3" width="10" height="26" rx="5"/>
-              <path d="M11 16h10"/>
-              <circle cx="14.5" cy="10" r="1"/><circle cx="17.5" cy="13" r="1"/>
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="11" y="3" width="10" height="26" rx="5"/><path d="M11 16h10"/><circle cx="14.5" cy="10" r="1"/><circle cx="17.5" cy="13" r="1"/>
             </svg>
           </div>
-          <div class="app-label">Dược phẩm</div>
-          <h3 class="app-title">Dược phẩm &amp; Mỹ phẩm</h3>
-          <p class="app-desc">Kiểm tra vô khuẩn, giám sát môi trường phòng sạch (cleanroom) cho sản xuất thuốc và mỹ phẩm.</p>
+          <div class="app-label">Mỹ phẩm · Dược</div>
+          <h3 class="app-title">Kiểm nghiệm mỹ phẩm, dược phẩm</h3>
+          <p class="app-desc">Kiểm tra giới hạn vi sinh, độ vô khuẩn và endotoxin cho mỹ phẩm và dược phẩm.</p>
+          <span class="app-card__more">Tìm hiểu →</span>
         </div>
+
+        <div class="app-card reveal" data-page-pending>
+          <div class="app-icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 28V14l8 5V14l8 5V8l8 4v16z"/><path d="M4 28h24"/>
+            </svg>
+          </div>
+          <div class="app-label">Sản xuất</div>
+          <h3 class="app-title">Sản xuất thực phẩm, dược phẩm</h3>
+          <p class="app-desc">Giám sát môi trường phòng sạch, kiểm soát vi sinh và khử khuẩn VHP cho dây chuyền sản xuất.</p>
+          <span class="app-card__more">Tìm hiểu →</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Brands (Hãng) ──────────────────────────────────────── -->
+  <section id="brands" class="section brands-section" data-screen-label="Hãng">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Hãng</span>
+        <h2 class="section-heading">Đối tác &amp; thương hiệu phân phối</h2>
+        <p class="section-desc">DP Lab là đại diện phân phối các thương hiệu uy tín trong ngành vi sinh và kiểm nghiệm trên thế giới.</p>
+      </div>
+      <div class="brands-grid reveal">
+        <a href="#" class="brand-tile" data-brand target="_blank" rel="noopener"><span class="brand-tile__name">Biomedia<small>Holdings</small></span></a>
+        <a href="#" class="brand-tile" data-brand target="_blank" rel="noopener"><span class="brand-tile__name">pmm</span></a>
+        <a href="#" class="brand-tile" data-brand target="_blank" rel="noopener"><span class="brand-tile__name">Tailin</span></a>
+        <a href="#" class="brand-tile" data-brand target="_blank" rel="noopener"><span class="brand-tile__name">Bokang</span></a>
+        <a href="#" class="brand-tile" data-brand target="_blank" rel="noopener"><span class="brand-tile__name">Masterflex</span></a>
+        <a href="#" class="brand-tile" data-brand target="_blank" rel="noopener"><span class="brand-tile__name">Entegris</span></a>
+        <a href="#" class="brand-tile" data-brand target="_blank" rel="noopener"><span class="brand-tile__name">ATCC</span></a>
+        <a href="#" class="brand-tile" data-brand target="_blank" rel="noopener"><span class="brand-tile__name">STBIO<small>Media</small></span></a>
       </div>
     </div>
   </section>
 
   <!-- ── CTA ────────────────────────────────────────────────── -->
-  <section class="cta-section">
+  <section class="cta-section" data-screen-label="CTA">
     <div class="container cta-section__inner">
       <div>
         <h2 class="cta-heading">Sẵn sàng bắt đầu hợp tác?</h2>
@@ -615,37 +556,71 @@
   </section>
 
   <!-- ── Footer ─────────────────────────────────────────────── -->
-  <footer class="footer">
+  <footer class="footer" data-screen-label="Footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="assets/dp-lab-logo.png" alt="DP Lab" class="footer__logo" />
+        <div class="footer__brand-row">
+          <img src="assets/dp-lab-logo.png" alt="DP Lab" class="footer__logo" />
+          <b>DP Lab</b>
+        </div>
         <p class="footer__tagline">Development – Passion</p>
-        <p class="footer__sub">Môi trường nuôi cấy vi sinh và vật tư kiểm nghiệm đạt chuẩn ISO, EP, USP — dành cho phòng QC, kiểm định và nghiên cứu tại Việt Nam.</p>
+        <p class="footer__sub">Môi trường nuôi cấy vi sinh, thiết bị và vật tư tiêu hao đạt chuẩn ISO, EP, USP — dành cho phòng QC, kiểm định và sản xuất tại Việt Nam.</p>
       </div>
       <div class="footer__cols">
         <div class="footer__col">
           <div class="footer__col-title">Sản phẩm</div>
-          <a href="#products">Môi trường vi sinh dạng bột</a>
-          <a href="#products">Môi trường sẵn sử dụng</a>
-          <a href="#products">Túi đứng có khóa zip</a>
-          <a href="#featured">Sản phẩm tiêu biểu</a>
+          <a href="#products">Hóa chất – Môi trường vi sinh</a>
+          <a href="#products">Thiết bị phòng vi sinh</a>
+          <a href="#products">Vật tư tiêu hao</a>
+          <a href="#brands">Hãng phân phối</a>
         </div>
         <div class="footer__col">
-          <div class="footer__col-title">Công ty</div>
-          <a href="#about">Về DP Lab</a>
-          <a href="#advantages">Lợi thế nổi bật</a>
-          <a href="#applications">Lĩnh vực ứng dụng</a>
+          <div class="footer__col-title">Ứng dụng</div>
+          <a href="#applications">Kiểm nghiệm thực phẩm</a>
+          <a href="#applications">Kiểm nghiệm nước</a>
+          <a href="#applications">Mỹ phẩm &amp; dược phẩm</a>
+          <a href="#applications">Sản xuất thực phẩm, dược phẩm</a>
         </div>
         <div class="footer__col">
           <div class="footer__col-title">Liên hệ</div>
-          <span class="footer__placeholder">Thông tin liên hệ sẽ được cập nhật</span>
+          <span class="muted">Hotline: <b>0xxx xxx xxx</b></span>
+          <span class="muted">Email: info@dplab.vn</span>
+          <span class="muted">Thông tin liên hệ đang được cập nhật</span>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="container">© 2025 DP Lab – Development &amp; Passion. Tất cả quyền được bảo lưu.</div>
+      <div class="container">© 2026 DP Lab – Development &amp; Passion. Tất cả quyền được bảo lưu.</div>
     </div>
   </footer>
+
+  <!-- ── Floating contact (bottom-left) ─────────────────────── -->
+  <div class="float-contact" data-screen-label="Khung liên hệ nổi">
+    <div class="float-contact__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </div>
+    <div>
+      <span class="float-contact__label">Hotline tư vấn</span>
+      <a href="tel:" class="float-contact__num">0xxx xxx xxx</a>
+      <span class="float-contact__mail">info@dplab.vn</span>
+    </div>
+  </div>
+
+  <!-- ── Floating social (bottom-right) ─────────────────────── -->
+  <div class="float-social" data-screen-label="Mạng xã hội nổi">
+    <a href="#" class="fs-zalo" title="Zalo" target="_blank" rel="noopener">Zalo</a>
+    <a href="#" class="fs-fb" title="Facebook" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078V12h3.047V9.356c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.469h-2.796v8.385C19.612 22.954 24 17.99 24 12z"/></svg>
+    </a>
+    <a href="#" class="fs-in" title="LinkedIn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+    </a>
+    <a href="#" class="fs-tawk" title="Chat trực tuyến (Tawk.to)" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    </a>
+  </div>
 
   <!-- ── Quote Modal ────────────────────────────────────────── -->
   <div class="modal-overlay hidden" id="quote-modal">
@@ -679,13 +654,13 @@
             </div>
           </div>
           <div class="form-field">
-            <label>Sản phẩm quan tâm</label>
+            <label>Nhóm sản phẩm quan tâm</label>
             <select name="product">
-              <option value="">Chọn dòng sản phẩm...</option>
-              <option>Môi trường vi sinh dạng bột (Dehydrated)</option>
-              <option>Môi trường sẵn sử dụng (Ready-to-Use)</option>
-              <option>Túi đứng có khóa zip (Bagged Media)</option>
-              <option>Tất cả dòng sản phẩm</option>
+              <option value="">Chọn nhóm sản phẩm...</option>
+              <option>Hóa chất – Môi trường vi sinh</option>
+              <option>Thiết bị phòng vi sinh</option>
+              <option>Vật tư tiêu hao</option>
+              <option>Tất cả nhóm sản phẩm</option>
             </select>
           </div>
           <div class="form-field">
@@ -711,12 +686,9 @@
       window.addEventListener('scroll', function () {
         navbar.classList.toggle('navbar--scrolled', window.scrollY > 24);
       }, { passive: true });
-
       var burger = document.getElementById('navbar-burger');
       var links = document.getElementById('navbar-links');
-      burger.addEventListener('click', function () {
-        links.classList.toggle('navbar__links--open');
-      });
+      burger.addEventListener('click', function () { links.classList.toggle('navbar__links--open'); });
       links.querySelectorAll('a').forEach(function (a) {
         a.addEventListener('click', function () { links.classList.remove('navbar__links--open'); });
       });
@@ -724,14 +696,22 @@
 
     // ── Reveal-on-scroll ────────────────────────────────────
     (function () {
-      if (!('IntersectionObserver' in window)) {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('visible'); });
-        return;
-      }
+      var root = document.documentElement;
+      var reveals = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { return; } /* base state is visible */
+      root.classList.add('js-anim');
       var obs = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
       }, { threshold: 0.07, rootMargin: '0px 0px -50px 0px' });
-      document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+      reveals.forEach(function (el) { obs.observe(el); });
+      /* safety net: never leave content hidden (drop anim gate -> base visible state) */
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          var hidden = false;
+          reveals.forEach(function (el) { if (!el.classList.contains('visible')) hidden = true; });
+          if (hidden) root.classList.remove('js-anim');
+        }, 1800);
+      });
     })();
 
     // ── Molecule Canvas (red dots over hero) ────────────────
@@ -741,56 +721,37 @@
       var ctx = canvas.getContext('2d');
       var raf, w, h, dpr = Math.max(1, window.devicePixelRatio || 1);
       var nodes = [];
-
       function init() {
-        w = canvas.offsetWidth;
-        h = canvas.offsetHeight;
-        canvas.width = w * dpr;
-        canvas.height = h * dpr;
+        w = canvas.offsetWidth; h = canvas.offsetHeight;
+        canvas.width = w * dpr; canvas.height = h * dpr;
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
         if (nodes.length === 0) {
           for (var i = 0; i < 26; i++) {
-            nodes.push({
-              x: Math.random() * w, y: Math.random() * h,
-              vx: (Math.random() - 0.5) * 0.4,
-              vy: (Math.random() - 0.5) * 0.4,
-              r: Math.random() * 2.5 + 1.5
-            });
+            nodes.push({ x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4, r: Math.random() * 2.5 + 1.5 });
           }
         }
       }
-
       function draw() {
         ctx.clearRect(0, 0, w, h);
-        nodes.forEach(function (n) {
-          n.x = ((n.x + n.vx) + w) % w;
-          n.y = ((n.y + n.vy) + h) % h;
-        });
+        nodes.forEach(function (n) { n.x = ((n.x + n.vx) + w) % w; n.y = ((n.y + n.vy) + h) % h; });
         for (var i = 0; i < nodes.length; i++) {
           for (var j = i + 1; j < nodes.length; j++) {
             var dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y;
             var d = Math.sqrt(dx * dx + dy * dy);
             if (d < 150) {
               ctx.strokeStyle = 'rgba(179,42,40,' + (0.18 * (1 - d / 150)) + ')';
-              ctx.lineWidth = 0.9;
-              ctx.beginPath();
-              ctx.moveTo(nodes[i].x, nodes[i].y);
-              ctx.lineTo(nodes[j].x, nodes[j].y);
-              ctx.stroke();
+              ctx.lineWidth = 0.9; ctx.beginPath();
+              ctx.moveTo(nodes[i].x, nodes[i].y); ctx.lineTo(nodes[j].x, nodes[j].y); ctx.stroke();
             }
           }
         }
         nodes.forEach(function (n) {
           ctx.fillStyle = 'rgba(179,42,40,0.42)';
-          ctx.beginPath();
-          ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-          ctx.fill();
+          ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();
         });
         raf = requestAnimationFrame(draw);
       }
-
-      init();
-      draw();
+      init(); draw();
       window.addEventListener('resize', init);
     })();
 
@@ -802,30 +763,19 @@
       var formWrap = document.getElementById('quote-form-wrap');
       var successPane = document.getElementById('quote-success');
       var successClose = document.getElementById('quote-success-close');
-
       function open() {
-        overlay.classList.remove('hidden');
-        formWrap.classList.remove('hidden');
-        successPane.classList.add('hidden');
-        document.body.style.overflow = 'hidden';
+        overlay.classList.remove('hidden'); formWrap.classList.remove('hidden');
+        successPane.classList.add('hidden'); document.body.style.overflow = 'hidden';
       }
       function close() {
-        overlay.classList.add('hidden');
-        document.body.style.overflow = '';
-        form.reset();
-        form.querySelectorAll('.form-err').forEach(function (el) { el.textContent = ''; });
+        overlay.classList.add('hidden'); document.body.style.overflow = '';
+        form.reset(); form.querySelectorAll('.form-err').forEach(function (el) { el.textContent = ''; });
       }
-
-      document.querySelectorAll('[data-open-quote]').forEach(function (btn) {
-        btn.addEventListener('click', open);
-      });
+      document.querySelectorAll('[data-open-quote]').forEach(function (btn) { btn.addEventListener('click', open); });
       closeBtn.addEventListener('click', close);
       successClose.addEventListener('click', close);
       overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && !overlay.classList.contains('hidden')) close();
-      });
-
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !overlay.classList.contains('hidden')) close(); });
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         var data = Object.fromEntries(new FormData(form).entries());
@@ -834,19 +784,27 @@
         if (!data.company || !data.company.trim()) errs.company = 'Vui lòng nhập tên công ty / phòng lab';
         if (!data.email || !data.email.trim()) errs.email = 'Vui lòng nhập email';
         else if (!/\S+@\S+\.\S+/.test(data.email)) errs.email = 'Email không hợp lệ';
-
         form.querySelectorAll('.form-err').forEach(function (el) {
-          var k = el.getAttribute('data-err');
-          el.textContent = errs[k] || '';
+          var k = el.getAttribute('data-err'); el.textContent = errs[k] || '';
         });
-
         if (Object.keys(errs).length) return;
-
-        // TODO: wire to backend / email / CRM
-        // For now: log + show success
         console.log('Quote request:', data);
-        formWrap.classList.add('hidden');
-        successPane.classList.remove('hidden');
+        formWrap.classList.add('hidden'); successPane.classList.remove('hidden');
+      });
+    })();
+
+    // ── Pending pages / brand links guard ───────────────────
+    (function () {
+      document.querySelectorAll('[data-page-pending]').forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          var href = el.getAttribute('href');
+          if (!href || href === '#') { e.preventDefault(); }
+        });
+      });
+      document.querySelectorAll('[data-brand]').forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          if (el.getAttribute('href') === '#') e.preventDefault();
+        });
       });
     })();
   </script>
